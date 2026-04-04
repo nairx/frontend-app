@@ -28,11 +28,11 @@ function Content() {
         {products.map((product) => (
           <div className="box">
             <img src={`${API_URL}/${product.imageUrl}`} width="300px" alt="" />
-            <h3>{product.name}</h3>
+            <h3 className="text-blue-900 text-2xl">{product.name}</h3>
             <p>{product.desc}</p>
             <h4>{product.price}</h4>
             <p>
-              <button onClick={() => addToCart(product)}>Add to Cart</button>
+              <button className="bg-teal-700 rounded-lg text-xl text-white m-3 p-1" onClick={() => addToCart(product)}>Add to Cart</button>
             </p>
           </div>
         ))}
